@@ -17,7 +17,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             var decision = go.AddComponent<AIDecisionDetectTargetConeOfVision3D>();
             decision.Label = label;
-            decision.SetTargetToNullIfNotFound = setTargetToNullIfNotFound;
+            // decision.SetTargetToNullIfNotFound = setTargetToNullIfNotFound;
+            decision.SetTargetToNullIfNoneIsFound = setTargetToNullIfNotFound;
             return decision;
         }
     }

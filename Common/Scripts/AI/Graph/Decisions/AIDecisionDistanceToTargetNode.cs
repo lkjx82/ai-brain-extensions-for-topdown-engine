@@ -11,7 +11,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
     [CreateNodeMenu("AI/Decision/Distance To Target")]
     public class AIDecisionDistanceToTargetNode : AIDecisionNode
     {
-        public AIDecisionDistanceToTarget.ComparisonModes comparisonMode = AIDecisionDistanceToTarget.ComparisonModes.GreatherThan;
+        public AIDecisionDistanceToTarget.ComparisonModes comparisonMode = AIDecisionDistanceToTarget.ComparisonModes.GreaterThan; 
+        // .ComparisonModes.GreatherThan;
         public float distance;
 
         public override AIDecision AddDecisionComponent(GameObject go)

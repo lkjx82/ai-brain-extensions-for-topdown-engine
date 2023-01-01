@@ -17,7 +17,8 @@ namespace TheBitCave.TopDownEngineExensions.AI.Graph
         {
             var action = go.AddComponent<AIActionMoveTowardsTarget2D>();
             action.Label = label;
-            action.MinimumDistance = minimumDistance;
+            // action.MinimumDistance = minimumDistance;
+            action.MinimumXDistance = minimumDistance;
             return action;
         }
     }
